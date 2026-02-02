@@ -2,13 +2,20 @@ import React from 'react'
 
 const List = () => {
   return (
-    <div className='h-[40%] flex items-center justify-start  m-10 bg-red-500 flex-nowrap gap-5'>
+    <div id='tasklist' className=' h-[40%] overflow-x-auto flex items-center justify-start  m-10  flex-nowrap gap-5'>
 
-        <div className="h-full w-[300px] bg-yellow-400 rounded-xl mx-5 mt-5   "></div>
+        <div className="h-75 shrink-0 w-75 bg-red-400 rounded-xl mx-5 p-5  ">
 
-        <div className="h-full w-[300px] bg-yellow-400 rounded-xl mx-5   "></div>
+        <div className="flex justify-between items-center  ">
+           <h3 className="bg-red-600 text-sm px-3 py-1 rounded ">High</h3> 
+        <h4 className='text-sm'>20 feb 2024</h4>
+        </div>
 
-        
+        <h2 className='mt-5 text-2xl font-semibold'>Make a youtube video</h2>
+        <p className='text-sm mt-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestiae!</p>
+
+        </div>
+
 
     </div>
   )
